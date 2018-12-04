@@ -1,0 +1,17 @@
+timezone: Asia/Tokyo
+
++task1:
+  _retry: 3
+  _export:
+    docker:
+      image: ruby:2.5.1
+  rb>: Task.task1
+  require: 'tasks/task'
+
++task2:
+  _retry: 3
+  _export:
+    docker:
+      image: ruby:2.5.1
+  rb>: Task.task2
+  require: 'tasks/task'
